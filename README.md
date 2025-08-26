@@ -1,73 +1,142 @@
-# Welcome to your Lovable project
+# 🛡️ GhostGuard - Confidential Code & API Key Shield
 
-## Project info
+**Professional code security scanner that detects and redacts API keys, tokens, passwords and sensitive data from your codebase.**
 
-**URL**: https://lovable.dev/projects/bc4676f0-3308-4d01-9be0-85ba32d45ca8
+GhostGuard automatically analyzes your code repositories for security vulnerabilities and helps you sanitize them before pushing to version control.
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **🔍 Multi-Mode Scanning**: Regex patterns, AI analysis, and hybrid detection
+- **🎯 Smart Detection**: API keys, passwords, tokens, certificates, PII, and more
+- **🔒 Auto-Redaction**: Replace secrets with environment variables
+- **📊 Risk Assessment**: Comprehensive security scoring and analytics  
+- **🎨 Modern UI**: Clean, responsive design with dark/light themes
+- **⚡ Real-time Results**: Live scanning progress and instant feedback
 
-**Use Lovable**
+## 🚀 Quick Start
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bc4676f0-3308-4d01-9be0-85ba32d45ca8) and start prompting.
+```bash
+# Install dependencies
+npm install
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Open http://localhost:8080
 ```
 
-**Edit a file directly in GitHub**
+## 🏗️ Tech Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Frontend**: React 18 + TypeScript + Vite
+- **UI Components**: shadcn/ui + Tailwind CSS
+- **Icons**: Lucide React
+- **Routing**: React Router v6
+- **State**: React Query + Context
 
-**Use GitHub Codespaces**
+## 📱 Screenshots
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Dashboard Overview
+- Risk score meter with security status
+- Recent scan history and findings
+- Quick action buttons for common tasks
 
-## What technologies are used for this project?
+### Security Scanner  
+- File upload with drag & drop
+- Repository URL scanning
+- Real-time progress tracking
 
-This project is built with:
+### Results Analysis
+- Detailed findings with code preview
+- Severity filtering and search
+- AI-powered reasoning for each detection
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Auto-Redaction Wizard
+- Interactive environment variable mapping
+- Downloadable sanitized code + .env files
+- Security impact summary
 
-## How can I deploy this project?
+## 🔧 Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/bc4676f0-3308-4d01-9be0-85ba32d45ca8) and click on Share -> Publish.
+```
+src/
+├── components/
+│   ├── shared/          # Reusable components
+│   │   ├── AppLayout.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── SecretBadge.tsx
+│   │   ├── RiskScoreMeter.tsx
+│   │   └── Dropzone.tsx
+│   └── ui/              # shadcn/ui components
+├── pages/               # Route components
+│   ├── Dashboard.tsx
+│   ├── ScanPage.tsx
+│   ├── ResultsPage.tsx
+│   └── RedactPage.tsx
+├── lib/
+│   └── mockApi.ts       # Simulated backend
+├── types/
+│   └── index.ts         # TypeScript definitions
+└── hooks/               # Custom React hooks
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 🎮 Demo Data
 
-Yes, you can!
+The app includes realistic mock data for demonstration:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Sample Findings**: API keys, passwords, tokens with different severities
+- **Multiple File Types**: JavaScript, Python, configuration files
+- **AI Reasoning**: Context-aware explanations for each detection
+- **Progress Simulation**: Realistic scanning progress with live updates
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🛡️ Security Features
+
+### Detection Capabilities
+- AWS access keys and secrets
+- GitHub personal access tokens  
+- Database passwords and connection strings
+- JWT secrets and private keys
+- Email addresses and PII
+- Custom regex patterns
+
+### Risk Assessment
+- Confidence scoring (0-100%)
+- Severity levels (Low, Medium, High, Critical)
+- Overall risk score calculation
+- Security trend analysis
+
+### Redaction Options
+- Environment variable generation
+- Downloadable sanitized code archives
+- Custom variable naming
+- Secrets vault integration (planned)
+
+## 🎨 Design System
+
+GhostGuard uses a comprehensive design system built with Tailwind CSS:
+
+- **Color Palette**: Security-focused blues, greens, and reds
+- **Typography**: Clean, professional fonts with code syntax highlighting
+- **Animations**: Smooth transitions and micro-interactions
+- **Responsive**: Mobile-first design with tablet and desktop breakpoints
+- **Accessibility**: WCAG compliant with proper contrast and keyboard navigation
+
+## 🔮 Roadmap
+
+- [ ] **Real Backend Integration**: Connect to actual scanning engines
+- [ ] **Secrets Vault Sync**: Integration with HashiCorp Vault, AWS Secrets Manager
+- [ ] **Custom Rules Engine**: Visual rule builder with testing
+- [ ] **Team Collaboration**: Multi-user workspaces and permissions
+- [ ] **CI/CD Integration**: GitHub Actions, GitLab CI plugins
+- [ ] **Compliance Reports**: SOC 2, HIPAA, PCI DSS reporting
+
+## 🤝 Contributing
+
+This is a demonstration project showcasing modern React development practices and security-focused UI design. The scanning functionality is simulated for demo purposes.
+
+## 📄 License
+
+MIT License - see LICENSE file for details.
+
+---
+
+**Keep your code ghost-clean!** 👻✨
